@@ -803,6 +803,10 @@ footer {
     padding: var(--spacing-sm) var(--spacing-lg) var(--spacing-xl);
   }
 
+  .projects-container h2 {
+    line-height: 80px;
+  }
+
   .swiper-wrapper {
     min-height: 2.1rem;
     align-items: stretch;
