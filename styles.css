@@ -435,17 +435,19 @@ header a:hover {
   transition: transform 0.3s ease;
 }
 
-.project-content {
+.project-content { 
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: var(--spacing-md);
   text-align: left;
+  gap: var(--spacing-sm);
 }
 
 .project-content h3 {
   margin-bottom: 0.75rem;
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
+  line-height: 28px;
   font-weight: var(--font-weight-semibold);
   color: var(--bg);
 }
@@ -453,9 +455,10 @@ header a:hover {
 .project-content p {
   flex: 1;
   margin-bottom: var(--spacing-sm);
-  font-size: var(--text-md);
-  color: var(--bg);
-  font-weight: (--font-weight-light);
+  font-size: var(--text-sm);
+  color: var(--text);
+  font-weight: var(--font-weight-light);
+  line-height: 20px;
 }
 
 .project-tags {
@@ -465,7 +468,7 @@ header a:hover {
 }
 
 .tag {
-  padding: 0.375rem 0.75rem;
+  padding: 0 var(--spacing-sm);
   border-radius: var(--radius-full);
   background-color: var(--bg);
   font-size: var(--text-xs);
@@ -477,11 +480,12 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--spacing-md);
   margin-top: var(--spacing-sm);
 }
 
 .project-buttons .botao {
+  width: 100%;
   border-color: var(--bg);
   background-color: rgb(239, 233, 225, 0.3);
   font-size: var(--text-md);
